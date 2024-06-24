@@ -42,6 +42,7 @@ const Seller = () => {
             setIsloading(false)
             
         }
+        
     };
     useEffect(()=>{
         fetchProperties(userId);

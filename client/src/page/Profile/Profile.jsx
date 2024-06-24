@@ -17,7 +17,7 @@ const Profile =()=>{
 
     const fetchProperties = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/property/${userId}`, {
+            const response = await axios.get(`https://rentify-vd6k.onrender.com/property/${userId}`, {
                 headers: { Authorization: `Bearer ${token.token}` }
             });
             setProperties(response.data);

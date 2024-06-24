@@ -25,7 +25,7 @@ const PropertyDetail = () => {
   const handleBookNow = async () => {
     console.log("Booking Now","Booking now,",id,property.userID)  
     try {
-      const response = await axios.post('http://localhost:5000/send-message', {
+      const response = await axios.post('https://rentify-vd6k.onrender.com/send-message', {
         propertyId: id,
         userId: property.userID, // Assuming the property object has a userId field
       });

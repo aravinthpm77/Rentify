@@ -23,7 +23,7 @@ const Buyer = () =>{
 
     const fetchProperties = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/Allproperty`, {
+            const response = await axios.get(`https://rentify-vd6k.onrender.com/Allproperty`, {
                 headers: { Authorization: `Bearer ${token.token}` }
             });
             setProperties(response.data);
